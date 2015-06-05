@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BS_Site.master.cs" Inherits="testModel01.BS_Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%: Page.Title %> - backStage_WebForm</title>
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/Sidebar.css" rel="stylesheet" />
+    <link href="../Content/BackEndUI.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/Sidebar.js"></script>
+    <script src="../Scripts/BackEndUI.js"></script>    
+
+</head>
+<body>
+    <div id="wrap">
+        <img class="bgfade" src="../BackEndImg/BackEndImg01.jpg">
+    </div>
+
+    <form id="form1" runat="server">        
+        <div id="wrapper">
+            <div class="overlay"></div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav main-menu">
+                    <li class="sidebar-brand" style="height: 150px">
+                        <div style="margin-top: 30px; text-align:center">
+                            <img src="../BackEndImg/ks.png" />
+                        </div>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_NewsList.aspx">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 最新消息<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_關於康欣.aspx">
+                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 關於康欣<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_收費標準表.aspx">
+                            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 收費標準表<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_入住事項.aspx">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 入住注意事項<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/BackEnd/BS_收費評估表.aspx">
+                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 收費評估表<span class="icon"></span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> 活動剪影<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header divider""></li>
+                           <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=0">環境照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=1">內部照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=2">慶生照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=3">泡腳照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=4">復健照片<span class="icon"></span></a></li>
+                            <li><a runat="server" href="~/BackEnd/BS_活動剪影後台.aspx?witchphoto=5">義剪照片<span class="icon"></span></a></li>
+                            <li class="dropdown-header divider"></li>
+                        </ul>
+                    </li>                    
+                </ul>
+                <footer class="footer">
+                    <div>
+                        <p class="text-muted">
+                            &copy; <%: DateTime.Now.Year %> - KSYY<br />
+                            <a runat="server" href="~/BackEnd/BS_Main.aspx">回首頁</a>
+                        </p>
+                    </div>
+                </footer>
+            </nav>
+
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <div class="container-BackEnd">
+                    <div class="row">
+                        <div style="padding: 0 15px 20px 15px"> <%--class="col-lg-8 col-lg-offset-2"--%>
+                            <asp:ContentPlaceHolder ID="BS_HeadContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <asp:ContentPlaceHolder ID="BS_BodyContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
