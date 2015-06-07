@@ -82,6 +82,8 @@
     <Content Include="BackEnd\BS_收費標準表Content.aspx" />
     <Content Include="BackEnd\BS_關於康欣.aspx" />
     <Content Include="BackEnd\BS_床位顯示_地圖.aspx" />
+    <Content Include="BackEnd\WebForm6.aspx" />
+    <Content Include="BackEnd\BS_床位顯示_地圖2.aspx" />
     <Content Include="bin\testModel01.dll" />
     <Content Include="bin\testModel01.pdb" />
     <Content Include="BackEnd\BS_活動剪影後台.aspx" />
@@ -454,6 +456,7 @@
     <Content Include="BackEndImg\ks.png" />
     <Content Include="pic\reverse32x32.png" />
     <Content Include="pic\save32x32.png" />
+    <Content Include="pic\WebForm1.aspx" />
     <Content Include="pic\圖-20趴-床位放大.jpg" />
     <Content Include="Scripts\BackEndUI.js" />
     <Content Include="Scripts\Sidebar.js" />
@@ -701,6 +704,20 @@
     <Compile Include="BackEnd\BS_床位顯示_地圖.aspx.designer.cs">
       <DependentUpon>BS_床位顯示_地圖.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BackEnd\WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位顯示_地圖2.aspx.cs">
+      <DependentUpon>BS_床位顯示_地圖2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEnd\BS_床位顯示_地圖2.aspx.designer.cs">
+      <DependentUpon>BS_床位顯示_地圖2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -711,6 +728,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="pic\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pic\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrontEnd\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -1,18 +1,25 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_床位顯示_地圖.aspx.cs" Inherits="testModel01.BackEnd.WebForm4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_床位顯示_地圖2.aspx.cs" Inherits="testModel01.BackEnd.WebForm7" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
 
-
-     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-         aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             </div>
         </div>
     </div>
-    <!------------------------------------------------------------------------------------------------>
-       <div style="width: 1235px; height: 847px; margin: 0 auto 0 auto">
+
+
+     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+         CssClass="table table-bordered table-hover"   
+          Font-Names="微軟正黑體" Width="100%"> 
+         <Columns>     
+               <asp:TemplateField HeaderText="編輯">
+                <HeaderStyle CssClass="info text-center" Font-Bold="True" Font-Size="Larger" />
+                <ItemStyle CssClass="text-center" Font-Size="Medium" />
+                                   <ItemTemplate>
+                 <div style="width: 1235px; height: 847px; margin: 0 auto 0 auto">
         <table class="nav-justified" style="background-image: url(../pic/床位_地圖85趴.jpg); width: 100%">
             <tr>
                 <td style="height: 35px; width: 108px;"></td>
@@ -32,16 +39,7 @@
             </tr>
             <tr>
                 <td style="height: 45px; width: 108px;"></td>
-                <td style="height: 45px; " colspan="2">
-
- 
-                                      <asp:HyperLink ID="HyperLink1" runat="server"  
-                        NavigateUrl="WebForm6.aspx"
-                        Text="123" ToolTip="點我編輯"
-                         data-toggle="modal"   data-target="#myModal"></asp:HyperLink>
- 
-                    <button class="btn" value="123" style="background-color:rgba(100%,100%,100%, 1); 
-                        height: 13px; width: 50px;"></button>
+                <td style="height: 45px; " colspan="2">               
 
                 </td>
                 <td style="height: 45px; width: 88px;"></td>
@@ -218,5 +216,18 @@
             </tr>
         </table>
     </div>
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+    </asp:GridView>
 
+
+   
+        <!--
+              <asp:HyperLink ID="HyperLink1" runat="server"  
+                        NavigateUrl='<%# Eval("fid", "BS_NewsContent.aspx?fid={0}") %>' 
+                        Text='<%# Eval("fSubject") %>' ImageUrl="~/pic/reverse32x32.png" ToolTip="點我編輯"
+                         data-toggle="modal"
+                         data-target="#myModal"></asp:HyperLink>
+        -->
 </asp:Content>

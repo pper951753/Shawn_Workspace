@@ -25,11 +25,11 @@ namespace testModel01
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
-            str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
+            //str_ConnectionString = @"Data Source=CR4-17\MSSQLSERVER2013;Initial Catalog=dbKSYY;Integrated Security=True";
             //str_ConnectionString = @"Data Source=SHAWN-PC;Integrated Security=SSPI;Initial Catalog=dbKSYY";
-       //     str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
-           // str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
-                 str_datasoure = @"CR4-17\MSSQLSERVER2013";            
+          str_ConnectionString = @" Data Source=WIN-R56ALTBAKPC\SQLEXPRESS;Initial Catalog=dbKSYY;Integrated Security=True";
+            str_datasoure = @"WIN-R56ALTBAKPC\SQLEXPRESS";
+       //          str_datasoure = @"CR4-17\MSSQLSERVER2013";            
             str_InitialCatalog = "dbKSYY";
 
             int_witchphoto = Convert.ToInt32(Request.QueryString["witchphoto"]);

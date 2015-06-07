@@ -1,18 +1,90 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackEnd/BS_Site.Master" AutoEventWireup="true" CodeBehind="BS_床位顯示_地圖.aspx.cs" Inherits="testModel01.BackEnd.WebForm4" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="BS_HeadContent" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="BS_BodyContent" runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm6.aspx.cs" Inherits="testModel01.BackEnd.WebForm6" %>
 
+<!DOCTYPE html>
 
-     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-         aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            </div>
-        </div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function ()
+            {
+                $("button").click(
+                    $("#GridView1").attr({ "DataSource": $("#GridView2").attr("DataSource") })
+                      )
+            }
+
+            )
+        
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $("a").click(
+         function afunction() {
+             var path1 = $("img", this).attr("src")
+             $("#img1").attr({ "src": path1 })
+             return false;
+         })
+        });
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <!-- Button trigger modal -->
+        
+         <asp:GridView ID="GridView2" runat="server"></asp:GridView>
+           <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+
+<button type="button" 
+    class="btn btn-primary btn-lg" 
+      >
+  按鈕一
+</button>
+        <br/>
+
+        <br/>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
+
+    <asp:Button ID="Button1" runat="server" Text="按鈕2" 
+   data-toggle="modal" data-target="#myModal" OnClick="Button1_Click" 
+    />
+    </ContentTemplate>
+</asp:UpdatePanel>
+
+<!-- Modal -->
+       
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;s;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">抬頭</h4>
+      </div>
+      <div class="modal-body">
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
-    <!------------------------------------------------------------------------------------------------>
-       <div style="width: 1235px; height: 847px; margin: 0 auto 0 auto">
+  </div>
+</div>
+
+        <!--
+         <div style="width: 1235px; height: 847px; margin: 0 auto 0 auto">
         <table class="nav-justified" style="background-image: url(../pic/床位_地圖85趴.jpg); width: 100%">
             <tr>
                 <td style="height: 35px; width: 108px;"></td>
@@ -33,17 +105,7 @@
             <tr>
                 <td style="height: 45px; width: 108px;"></td>
                 <td style="height: 45px; " colspan="2">
-
- 
-                                      <asp:HyperLink ID="HyperLink1" runat="server"  
-                        NavigateUrl="WebForm6.aspx"
-                        Text="123" ToolTip="點我編輯"
-                         data-toggle="modal"   data-target="#myModal"></asp:HyperLink>
- 
-                    <button class="btn" value="123" style="background-color:rgba(100%,100%,100%, 1); 
-                        height: 13px; width: 50px;"></button>
-
-                </td>
+                <button class="btn" value="123" style="background-color:rgba(100%,100%,100%, 1); height: 13px; width: 50px;"></button></td>
                 <td style="height: 45px; width: 88px;"></td>
                 <td style="height: 45px; width: 88px;"></td>
                 <td style="height: 45px; width: 88px;"></td>
@@ -218,5 +280,8 @@
             </tr>
         </table>
     </div>
+        -->
 
-</asp:Content>
+    </form>
+</body>
+</html>

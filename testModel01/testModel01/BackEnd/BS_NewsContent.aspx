@@ -19,7 +19,12 @@
 <body>
     <form id="form2" runat="server">
         <div class="container-NewsEdit">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId" InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent]) VALUES (@fDate, @fSubject, @fContent)" SelectCommand="SELECT * FROM [tNews] WHERE ([fId] = @fId)" UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent WHERE [fId] = @fId">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+                 ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+                 DeleteCommand="DELETE FROM [tNews] WHERE [fId] = @fId"
+                 InsertCommand="INSERT INTO [tNews] ([fDate], [fSubject], [fContent]) VALUES (@fDate, @fSubject, @fContent)" 
+                SelectCommand="SELECT * FROM [tNews] WHERE ([fId] = @fId)" 
+                UpdateCommand="UPDATE [tNews] SET [fDate] = @fDate, [fSubject] = @fSubject, [fContent] = @fContent WHERE [fId] = @fId">
                 <DeleteParameters>
                     <asp:Parameter Name="fId" Type="Int32" />
                 </DeleteParameters>
@@ -38,7 +43,8 @@
                     <asp:Parameter Name="fId" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:FormView ID="FormView1" runat="server" DataKeyNames="fId" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated">
+         
+               <asp:FormView ID="FormView1" runat="server" DataKeyNames="fId" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="100%" OnItemCommand="FormView1_ItemCommand" OnItemUpdated="FormView1_ItemUpdated">
                 <EditItemTemplate>
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
