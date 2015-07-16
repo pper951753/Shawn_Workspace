@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LEFT" xml:space="preserve">
+    <value>排  序</value>
+  </data>
+  <data name="NODE_META_KEYWORD" xml:space="preserve">
+    <value>前台連結</value>
+  </data>
+  <data name="NODE_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="NODE_URL" xml:space="preserve">
+    <value>後台連結</value>
+  </data>
+  <data name="NODE_PARENT_ID" xml:space="preserve">
+    <value>父NODE_ID</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="NODE_TITLE" xml:space="preserve">
+    <value>名  稱</value>
+  </data>
+  <data name="AUDIT_ENTITY_NAME" xml:space="preserve">
+    <value>操作的TABLE</value>
+  </data>
+  <data name="AUDIT_USER_NAME" xml:space="preserve">
+    <value>操作者</value>
+  </data>
+  <data name="CaptchaValue" xml:space="preserve">
+    <value>驗證碼</value>
+  </data>
+  <data name="CREATE_DATE" xml:space="preserve">
+    <value>建立日期</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>說明</value>
+  </data>
+  <data name="FILE_NAME" xml:space="preserve">
+    <value>檔案名稱</value>
+  </data>
+  <data name="FULL_NAME" xml:space="preserve">
+    <value>名  稱</value>
+  </data>
+  <data name="GoBackIndex" xml:space="preserve">
+    <value>回首頁</value>
+  </data>
+  <data name="LAST_MODIFIED_DATE" xml:space="preserve">
+    <value>最後修改日期</value>
+  </data>
+  <data name="LogOff" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="ORIGINAL_FILE_NAME" xml:space="preserve">
+    <value>原始檔名</value>
+  </data>
+  <data name="PARAGRAPH_CONTENT" xml:space="preserve">
+    <value>內容</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>密  碼</value>
+  </data>
+  <data name="ROLE_TITLE" xml:space="preserve">
+    <value>群組名稱</value>
+  </data>
+  <data name="TITLE" xml:space="preserve">
+    <value>標題</value>
+  </data>
+  <data name="USER_NAME" xml:space="preserve">
+    <value>員工編號</value>
+  </data>
+  <data name="VISIBILITY" xml:space="preserve">
+    <value>顯 示</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>歡迎</value>
+  </data>
+  <data name="Button_Create" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Button_Edit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="Button_Print" xml:space="preserve">
+    <value>列印</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>存  檔</value>
+  </data>
+  <data name="Button_Search" xml:space="preserve">
+    <value>查  詢</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Confirm_Message" xml:space="preserve">
+    <value>再一次確認，您要刪除這筆資料？</value>
+  </data>
+  <data name="Default_Validation_Message" xml:space="preserve">
+    <value>{0} 請勿超過 {1} 個字</value>
+  </data>
+  <data name="Doing" xml:space="preserve">
+    <value>處理中...</value>
+  </data>
+  <data name="GoBackPrev" xml:space="preserve">
+    <value>回上頁</value>
+  </data>
+  <data name="Go_Page" xml:space="preserve">
+    <value>&lt;li&gt; 第 {0} 頁&lt;/li&gt;</value>
+  </data>
+  <data name="Memo" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="Next_Page" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>開啟</value>
+  </data>
+  <data name="Prev_Page" xml:space="preserve">
+    <value>上一頁</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>已重覆，請重新設定</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重新輸入</value>
+  </data>
+  <data name="Right_Format" xml:space="preserve">
+    <value>請輸入正確的格式</value>
+  </data>
+  <data name="Search_Title" xml:space="preserve">
+    <value>搜尋名稱</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>全選</value>
+  </data>
+  <data name="System_Default_Error" xml:space="preserve">
+    <value>系統發生錯誤，請聯絡系統管理員!!</value>
+  </data>
+  <data name="Total_Page" xml:space="preserve">
+    <value>&lt;span&gt;總共 {0} 頁 / {1} 筆資料&lt;/span&gt;</value>
+  </data>
+  <data name="Web_Default_Error" xml:space="preserve">
+    <value>網頁發生錯誤，請聯絡系統管理員</value>
+  </data>
+  <data name="FooterMessage" xml:space="preserve">
+    <value>本圖庫為「陽明山國家公園生態資源整合暨環境教育推廣計畫(先期計畫)」提供之加值服務，&lt;br /&gt;
+陽明山國家公園管理處©2010版權所有　非經本處正式書面同意不得將全部或部分內容，&lt;br /&gt;轉載於任何形式媒體 建議使用瀏覽器IE5.0以上版本；最佳螢幕解析度：1024x768</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>首頁</value>
+  </data>
+  <data name="LogOn" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="LogOnErrorMessage" xml:space="preserve">
+    <value>帳號 or 密碼不正確!!</value>
+  </data>
+  <data name="AjaxDelete_Message" xml:space="preserve">
+    <value>已刪除</value>
+  </data>
+  <data name="Button_PositionEdit" xml:space="preserve">
+    <value>職位管理</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Choice_Dialog" xml:space="preserve">
+    <value>選擇功能</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Required_Column" xml:space="preserve">
+    <value>*為必填欄位</value>
+  </data>
+  <data name="Role_EditUser" xml:space="preserve">
+    <value>編輯使用者</value>
+  </data>
+  <data name="Search_Result" xml:space="preserve">
+    <value>查詢結果</value>
+  </data>
+  <data name="zTree_Confirm_Delete" xml:space="preserve">
+    <value>確認刪除 </value>
+  </data>
+  <data name="zTree_Confirm_Name" xml:space="preserve">
+    <value>請輸入名稱</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>主管</value>
+  </data>
+  <data name="PositionEdit_Message" xml:space="preserve">
+    <value>同一部門下僅能設定一位主管</value>
+  </data>
+  <data name="PositionName" xml:space="preserve">
+    <value>職位名稱</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>住址</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>代理人</value>
+  </data>
+  <data name="ArriveDay" xml:space="preserve">
+    <value>到職日</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="Choose_First" xml:space="preserve">
+    <value>請先選擇一項!!</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>確認密碼</value>
+  </data>
+  <data name="LeaveDay" xml:space="preserve">
+    <value>離職日</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>聯絡電話</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+  <data name="WkaUserModel_Position" xml:space="preserve">
+    <value>職  稱</value>
+  </data>
+  <data name="AuditStatus_Disable" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="AuditStatus_Enable" xml:space="preserve">
+    <value>已確認</value>
+  </data>
+  <data name="AuditStatus_Ing" xml:space="preserve">
+    <value>核准中</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="UserStatus_Disable" xml:space="preserve">
+    <value>離職</value>
+  </data>
+  <data name="UserStatus_Enable" xml:space="preserve">
+    <value>在職</value>
+  </data>
+  <data name="UserStatus_Stop" xml:space="preserve">
+    <value>留職停薪</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>選擇</value>
+  </data>
+  <data name="DropdownListAll" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="Bulletin_Category" xml:space="preserve">
+    <value>訊息類別</value>
+  </data>
+  <data name="Choose_Something_First" xml:space="preserve">
+    <value>請先選擇</value>
+  </data>
+  <data name="End_Date" xml:space="preserve">
+    <value>結束日期</value>
+  </data>
+  <data name="Please_Choose" xml:space="preserve">
+    <value>請選擇...</value>
+  </data>
+  <data name="Start_Date" xml:space="preserve">
+    <value>開始日期</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>至</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>相關連結</value>
+  </data>
+  <data name="View_Count" xml:space="preserve">
+    <value>瀏覽人次</value>
+  </data>
+  <data name="FileUploadDesc" xml:space="preserve">
+    <value>請選擇要上傳的檔案</value>
+  </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="UploadFileCancel" xml:space="preserve">
+    <value>取消選取檔案</value>
+  </data>
+  <data name="UploadFileOverThen" xml:space="preserve">
+    <value>大小超過限制</value>
+  </data>
+  <data name="AuditStatus" xml:space="preserve">
+    <value>校對狀態</value>
+  </data>
+  <data name="Authority" xml:space="preserve">
+    <value>瀏覽權限</value>
+  </data>
+  <data name="Button_Sub_Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Creater" xml:space="preserve">
+    <value>創作者</value>
+  </data>
+  <data name="Document_Category" xml:space="preserve">
+    <value>文件分類</value>
+  </data>
+  <data name="Document_FID" xml:space="preserve">
+    <value>檔案號</value>
+  </data>
+  <data name="Document_ID" xml:space="preserve">
+    <value>文件號</value>
+  </data>
+  <data name="Excerpt" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>填表人</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>提供者</value>
+  </data>
+  <data name="ConfirmPassword_Error" xml:space="preserve">
+    <value>與密碼不符</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>自訂</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="Hot" xml:space="preserve">
+    <value>熱門</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>筆</value>
+  </data>
+  <data name="Picture_Category" xml:space="preserve">
+    <value>圖資分類</value>
+  </data>
+  <data name="Picture_Keyword" xml:space="preserve">
+    <value>關鍵字</value>
+  </data>
+  <data name="Picture_Location" xml:space="preserve">
+    <value>圖資地點</value>
+  </data>
+  <data name="Picture_Time" xml:space="preserve">
+    <value>圖資時間</value>
+  </data>
+  <data name="Plan_Name" xml:space="preserve">
+    <value>計畫名稱</value>
+  </data>
+  <data name="Uploader" xml:space="preserve">
+    <value>上傳者</value>
+  </data>
+  <data name="Button_Picture_Edit" xml:space="preserve">
+    <value>圖資管理</value>
+  </data>
+  <data name="Attachment_Edit" xml:space="preserve">
+    <value>附件管理</value>
+  </data>
+  <data name="Attachment_Edit_Batch" xml:space="preserve">
+    <value>照片批次上傳</value>
+  </data>
+  <data name="Attachment_Edit_Multi" xml:space="preserve">
+    <value>新增照片(多筆)</value>
+  </data>
+  <data name="Attachment_Date" xml:space="preserve">
+    <value>攝影日期</value>
+  </data>
+  <data name="Attachment_Edit_Audio_Multi" xml:space="preserve">
+    <value>新增影音(多筆)</value>
+  </data>
+  <data name="Attachment_Edit_Other_Multi" xml:space="preserve">
+    <value>新增其它檔案(多筆)</value>
+  </data>
+  <data name="Audio" xml:space="preserve">
+    <value>影音</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>其它檔案</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>照片</value>
+  </data>
+  <data name="Picture_Cover" xml:space="preserve">
+    <value>封面</value>
+  </data>
+  <data name="Picture_Edit" xml:space="preserve">
+    <value>照片編輯</value>
+  </data>
+  <data name="Picture_Next" xml:space="preserve">
+    <value>下一張</value>
+  </data>
+  <data name="Picture_Prev" xml:space="preserve">
+    <value>上一張</value>
+  </data>
+  <data name="Picture_SetCover" xml:space="preserve">
+    <value>設為封面</value>
+  </data>
+  <data name="Attachment_Format" xml:space="preserve">
+    <value>檔案格式</value>
+  </data>
+  <data name="FileSizeOverDefault" xml:space="preserve">
+    <value>檔案大小超過限制，請重新選擇!!</value>
+  </data>
+  <data name="PictureFormat_Only" xml:space="preserve">
+    <value>只能上傳圖片格式，請重新選擇!!</value>
+  </data>
+  <data name="Picture_Audio_Edit" xml:space="preserve">
+    <value>影音編輯</value>
+  </data>
+  <data name="Picture_Other_Edit" xml:space="preserve">
+    <value>其它檔案編輯</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一筆</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>上一筆</value>
+  </data>
+  <data name="Keyword_Hit" xml:space="preserve">
+    <value>多個關鍵字請用","分隔</value>
+  </data>
+  <data name="Picture_Batch" xml:space="preserve">
+    <value>＊建立圖片壓縮檔時，請勿包含資料匣&lt;br /&gt;選擇圖片壓縮檔  ( Zip / Rar )</value>
+  </data>
+  <data name="Picture_Count" xml:space="preserve">
+    <value>張</value>
+  </data>
+  <data name="AutoPlay" xml:space="preserve">
+    <value>自動播放</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>檔案下載</value>
+  </data>
+  <data name="StopPlay" xml:space="preserve">
+    <value>停止播放</value>
+  </data>
+  <data name="Picture_Current_Index" xml:space="preserve">
+    <value>目前第</value>
+  </data>
+  <data name="Picture_First" xml:space="preserve">
+    <value>第一張</value>
+  </data>
+  <data name="Picture_Last" xml:space="preserve">
+    <value>最後一張</value>
+  </data>
+  <data name="Picture_Total_Index" xml:space="preserve">
+    <value>張 / 共</value>
+  </data>
+  <data name="WkaUserModel_BankAccount" xml:space="preserve">
+    <value>銀行帳號</value>
+  </data>
+</root>
